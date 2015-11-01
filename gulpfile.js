@@ -3,7 +3,7 @@ var scss = require('gulp-scss');
 var cssmin = require('gulp-cssmin');
 var gulpif = require('gulp-if');
 var production = false;
-var assetsPath = './htdocs/content/themes/respario';
+var assetsPath = './htdocs/content/themes/davidjames';
 
 gulp.task('css', function () {
     return gulp.src(assetsPath + '/scss/style.scss')
