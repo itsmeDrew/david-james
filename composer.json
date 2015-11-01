@@ -1,0 +1,19 @@
+{
+    "name": "brandcave",
+    "require": {
+        "johnpbloch/wordpress": "~4.1"
+    },
+    "authors": [
+        {
+            "name": "Drew Roberts",
+            "email": "drew@itsmedrew.com"
+        }
+    ],
+    "extra":{
+        "installer-paths":{
+            "htdocs/content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "htdocs/content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "htdocs/cms"
+    }
+}
