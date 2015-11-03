@@ -20,9 +20,9 @@
  * For more information on hooks, actions, and filters,
  * {@link https://codex.wordpress.org/Plugin_API}
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package David James
+ * @subpackage david-james
+ * @since David James 1.0.1
  */
 
 /**
@@ -371,4 +371,3 @@ function my_update_comment_field($comment_field) {
 add_filter('comment_form_field_comment','my_update_comment_field');
 
 /* comments title */
-

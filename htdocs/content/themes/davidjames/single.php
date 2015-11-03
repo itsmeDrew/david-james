@@ -2,9 +2,9 @@
 /**
  * The template for displaying all single posts and attachments
  *
- * @package Brandcave
- * @subpackage brandcave
- * @since Brandcave 1.0.1
+ * @package David James
+ * @subpackage david-james
+ * @since David James 1.0.1
  */
 
 get_header(); ?>

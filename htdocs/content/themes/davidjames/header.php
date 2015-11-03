@@ -4,9 +4,9 @@
  *
  * Displays all of the head element and everything up until the "site-content" div.
  *
- * @package Brandcave
- * @subpackage brandcave
- * @since Brandcave 1.0.1
+ * @package David James
+ * @subpackage david-james
+ * @since David James 1.0.1
  */
 ?>
 <!DOCTYPE html>

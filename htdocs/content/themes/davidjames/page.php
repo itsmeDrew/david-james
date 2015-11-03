@@ -6,9 +6,9 @@
  * Please note that this is the WordPress construct of pages and that
  * other "pages" on your WordPress site will use a different template.
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package David James
+ * @subpackage david-james
+ * @since David James 1.0.1
  */
 
 get_header(); ?>
