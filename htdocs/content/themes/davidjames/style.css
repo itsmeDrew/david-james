@@ -142,6 +142,14 @@ a:hover {
   margin-top: 100px;
 }
 
+.col--full-width {
+  /*bootstrap override*/
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /**********************
 *** TYPEOGRAPHY
 **********************/
@@ -314,6 +322,17 @@ button {
 
 .new-book__stats--wrapper {
   margin-top: 2rem;
+}
+
+/*art display*/
+
+.home-art__artwork--wrapper {
+  position: relative;
+}
+
+.home-art__artwork-image {
+  width: 100%;
+  display: block;
 }
 
 /**********************

@@ -77,4 +77,21 @@ get_header();
     </div>
   </div>
 </div>
+<div class="block home-art--wrapper container-fluid">
+  <div class="row">
+    <div class="home-art__artwork--wrapper col-md-6 col--full-width">
+      <div class="home-art__artwork-row">
+        <img class="home-art__artwork-image" src="<?php bloginfo('template_url'); ?>/img/art-01.jpg" alt="artwork 01" />
+      </div>
+    </div>
+    <div class="home-art__artwork--wrapper col-md-6 col--full-width">
+      <div class="home-art__artwork--row">
+        <img class="home-art__artwork-image" src="<?php bloginfo('template_url'); ?>/img/art-02.jpg" alt="artwork 02" />
+      </div>
+      <div class="home-art__artwork--row">
+        <img class="home-art__artwork-image" src="<?php bloginfo('template_url'); ?>/img/art-03.jpg" alt="artwork 03" />
+      </div>
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>
