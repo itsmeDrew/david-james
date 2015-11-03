@@ -48,5 +48,33 @@ get_header();
     </div><!-- /.container-fluid -->
   </nav>
 </div>
-div.
+<div class="new-book--wrapper container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <h4 class="sec-heading--secondary">new book from david james:</h4>
+      <h2 class="sec-heading--primary">Steps</h2>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <p>
+        On sale now, Steps is a story of growth, reinvention, death and love, reminding us that there is always hope and everyday is a new opportunity to become better. It is the memoir of Issac, a country boy, who, after becoming unsatisfied with life in West Texas, travels the world in search of love and meaning. At every turn, however, he is met with insurmountable obstacles. Drawing on his relentless, dogged refusal to give up, he steadfastly confronts his demons. But, will it be enough to overcome the impossible odds against him?
+      </p>
+      <div class="new-book__stats--wrapper">
+        <div class="row">
+          <div class="new-book__stat col-md-3">
+            <h2>407</h2>
+            <h5>pages</h5>
+          </div>
+          <div class="new-book__stat col-md-3">
+            <h2>54</h2>
+            <h5>pages</h5>
+          </div>
+          <div class="new-book__stat col-md-3">
+            <h2>6</h2>
+            <h5>pages</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>

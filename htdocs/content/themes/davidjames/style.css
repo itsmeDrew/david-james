@@ -12,6 +12,15 @@ Text Domain: Brandcave
 */
 
 /**********************
+*** COLORS
+**********************/
+/*
+red: #c65f63;
+grey: #3d3d3d;
+white: #ffffff;
+*/
+
+/**********************
 *** RESET
 **********************/
 
@@ -115,9 +124,10 @@ input, select {
 **********************/
 
 body {
-  line-height: 1.5;
-  font-size: 100%;
   font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  background: white;
+  line-height: 1.5;
 }
 
 a {
@@ -126,6 +136,44 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+/**********************
+*** TYPEOGRAPHY
+**********************/
+
+h1 {
+
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #3d3d3d;
+  text-transform: capitalize;
+}
+
+h3 {
+
+}
+
+h4 {
+  font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: 1px;
+  color: #3d3d3d;
+  text-transform: uppercase;
+}
+
+h5 {
+
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 2;
+  color: #3d3d3d;
 }
 
 /**********************
@@ -199,6 +247,10 @@ a:hover {
   border-bottom: 2px solid white;
   font-size: 18px;
   letter-spacing: 1px;
+}
+
+.hero__content p {
+  color: white;
 }
 
 /**********************
