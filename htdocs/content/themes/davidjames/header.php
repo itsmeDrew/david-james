@@ -18,7 +18,6 @@
 
 	<!-- stylesheets -->
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href="<?php bloginfo(template_url); ?>/css/bootstrap.css" rel="stylesheet" />
 	<link href="<?php bloginfo(template_url); ?>/css/font-awesome.css" rel="stylesheet">
 	<link href="<?php bloginfo(template_url); ?>/style.css" rel="stylesheet" />
 	<?php wp_head(); ?>
