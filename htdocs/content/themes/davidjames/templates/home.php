@@ -81,6 +81,9 @@ get_header();
   <div class="row">
     <div class="home-art__artwork--wrapper col-md-6 col--full-width">
       <div class="home-art__artwork-row">
+        <div class="home-art__artwork-content">
+          <a class="home-art__link" href="#">view the david james art gallery</a>
+        </div>
         <img class="home-art__artwork-image" src="<?php bloginfo('template_url'); ?>/img/art-01.jpg" alt="artwork 01" />
       </div>
     </div>

@@ -266,6 +266,11 @@ p {
   letter-spacing: 1px;
 }
 
+.jumbotron__link:hover {
+  color: white;
+  border-bottom: 2px solid #c65f63;
+}
+
 .hero__content p {
   color: white;
 }
@@ -326,13 +331,32 @@ button {
 
 /*art display*/
 
-.home-art__artwork--wrapper {
+.home-art__artwork-row {
   position: relative;
+}
+
+.home-art__artwork-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
 }
 
 .home-art__artwork-image {
   width: 100%;
   display: block;
+}
+
+.home-art__link {
+  font-size: 32px;
+  color: white;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid white;
+  text-transform: capitalize;
+}
+
+.home-art__link:hover {
+  color: white;
+  border-bottom: 2px solid #c65f63;
 }
 
 /**********************
