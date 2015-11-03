@@ -138,6 +138,10 @@ a:hover {
   text-decoration: none;
 }
 
+.block {
+  margin-top: 100px;
+}
+
 /**********************
 *** TYPEOGRAPHY
 **********************/
@@ -160,13 +164,18 @@ h3 {
 
 h4 {
   font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
   letter-spacing: 1px;
   color: #3d3d3d;
   text-transform: uppercase;
 }
 
 h5 {
-
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #c65f63;
+  text-transform: uppercase;
 }
 
 p {
@@ -301,6 +310,12 @@ button {
   font-size:36px;
 }
 
+/*new book*/
+
+.new-book__stats--wrapper {
+  margin-top: 2rem;
+}
+
 /**********************
 *** MEDIA QUERIES
 **********************/
@@ -319,6 +334,12 @@ button {
   .navbar-collapse {
     background: rgba(0,0,0,0.8);
     padding: 1rem 2rem;
+  }
+
+  /*page home*/
+
+  .block-content__paragraph {
+    margin: 2rem 0;
   }
 }
 
