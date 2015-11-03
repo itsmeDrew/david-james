@@ -39,14 +39,14 @@ get_header();
           <li><a href="#">Journal</a></li>
           <li><a href="#">Art</a></li>
           <li><a href="#">Reach</a></li>
-          <li><a href="#">Purchase Steps</a></li>
+          <li><button class="btn-pill" href="#">Purchase Steps | $15</button></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Cart</a></li>
+          <li><a href="#">$0.00 0 Items</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 </div>
-
+div.
 <?php get_footer(); ?>

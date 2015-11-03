@@ -145,6 +145,31 @@ a:hover {
   background: none;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  text-shadow: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #c65e64;
+}
+
+.navbar-collapse {
+  border: none;
+  border-color: transparent;
+}
+
+/*mobile menu*/
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
 /*navbar home*/
 
 .page-template-home .navbar-default {
@@ -158,9 +183,8 @@ a:hover {
   box-shadow: none;
 }
 
-.page-template-home .navbar-default .navbar-nav > li > a {
-  color: white;
-  text-shadow: none;
+.page-template-home .navbar-default .nav > li > a {
+  padding: 5px 15px;
 }
 
 
@@ -172,9 +196,28 @@ a:hover {
   font-family: 'Open Sans', Arial, sans-serif;
   color: white;
   padding-bottom: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
   font-size: 18px;
   letter-spacing: 1px;
+}
+
+/**********************
+*** BUTTONS
+**********************/
+
+button {
+  border: none;
+  letter-spacing: 1px;
+}
+
+.btn-pill {
+  background: #c65e64;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+.btn-pill:hover {
+  background: #ad5359;
 }
 
 /**********************
@@ -187,6 +230,7 @@ a:hover {
   background: url('img/home-bg.jpg');
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
   color: white;
 }
 
@@ -203,4 +247,29 @@ a:hover {
 
 .hero__content p {
   font-size:36px;
+}
+
+/**********************
+*** MEDIA QUERIES
+**********************/
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 970px) {
+
+}
+
+@media (max-width: 768px) {
+  /*mobile nav*/
+
+  .navbar-collapse {
+    background: rgba(0,0,0,0.8);
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
 }
