@@ -201,6 +201,9 @@ p {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -222,6 +225,18 @@ p {
 .navbar-collapse {
   border: none;
   border-color: transparent;
+}
+
+.navbar-default.sticky,
+.page-template-home .navbar-default.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  background: #333643;
+  border-radius: 0;
+  padding: 1rem;
+  z-index: 10;
 }
 
 /*mobile menu*/

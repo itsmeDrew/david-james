@@ -10,7 +10,7 @@
 
 get_header();
 ?>
-<div class="jumbotron" role="hero">
+<div class="jumbotron js-sticky-scroll" role="hero">
   <div class="container">
     <div class="hero__logo">
       <img src="<?php bloginfo(template_url);?>/img/david-jones-signature.png" alt="david-jones-signature" />
@@ -20,7 +20,7 @@ get_header();
       <a class="jumbotron__link" href="#" role="cta">Watch Trailer</a>
     </div>
   </div>
-  <nav class="navbar navbar-default">
+  <nav class="js-sticky-nav navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
