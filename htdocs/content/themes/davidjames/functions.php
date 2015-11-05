@@ -339,17 +339,17 @@ function remove_admin_login_header() {
 
 //the excerpt revised
 
-function brandcave_excerpt_length( $length ) {
+function custom_excerpt_length( $length ) {
 	return 20;
 }
 
 function new_excerpt_more($more) {
        global $post;
-	return '... <a href="' . get_permalink($post->ID) . '" class="btn btn-round btn-default">Read More</a>';
+	return '... <a href="' . get_permalink($post->ID) . '" class="read-more">Read More</a>';
 }
 
 add_filter('excerpt_more', 'new_excerpt_more');
-add_filter( 'excerpt_length', 'brandcave_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 function alter_comment_form_fields($fields){
 		$comment_notes_before = '';
