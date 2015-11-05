@@ -73,26 +73,20 @@ get_header();
 </div>
 <div class="block two-col-feature container">
   <div class="row">
+    <?php $queryBlog = new WP_Query(array( 'posts_per_page' => 2)); ?>
+    <?php if ($queryBlog->have_posts()) : while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
+
     <div class="two-col-feature__col two-col-feature__rule col-md-6">
       <div class="two-col-feature__heading">
-        <h2>This is the Title of the Latest Blog Post</h2>
-        <h5 class="date">12-10-15</h5>
+        <h2><?php the_title(); ?></h2>
+        <h5 class="date"><?php the_time('F j, Y'); ?></h5>
       </div>
       <div class="two-col-feature__content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <?php the_excerpt(); ?>
       </div>
-      <a class="link--read-more" href="#">read more</a>
     </div>
-    <div class="two-col-feature__col col-md-6">
-      <div class="two-col-feature__heading">
-        <h2>This is the Title of the Latest Blog Post</h2>
-        <span class="date">12-10-15</span>
-      </div>
-      <div class="two-col-feature__content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-      </div>
-      <a class="link--read-more" href="#">read more</a>
-    </div>
+
+    <?php endwhile; endif; wp_reset_postdata(); ?>
   </div>
 </div>
 <div class="block cta--wrapper">
