@@ -345,7 +345,7 @@ function custom_excerpt_length( $length ) {
 
 function new_excerpt_more($more) {
        global $post;
-	return '... <a href="' . get_permalink($post->ID) . '" class="read-more">Read More</a>';
+	return '... <a href="' . get_permalink($post->ID) . '" class="link--read-more">Read More</a>';
 }
 
 add_filter('excerpt_more', 'new_excerpt_more');

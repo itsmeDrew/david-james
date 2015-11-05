@@ -22,7 +22,7 @@ get_header();
       <img class="blog-list__image" src="<?php echo $thumbnail[0]; ?>" alt="<?php echo the_title(); ?>" />
       <?php endif; ?>
     </div>
-    <div class="col-md-8">
+    <div class="blog-list__content col-md-8">
       <div class="blog-list__header">
         <h4 class="about-heading--secondary">written by <?php the_author(); ?> | <?php the_date(); ?></h4>
         <h2 class="about-heading--primary"><?php the_title(); ?></h2>
