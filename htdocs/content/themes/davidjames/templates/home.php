@@ -71,24 +71,24 @@ get_header();
     </div>
   </div>
 </div>
-<div class="block home-blog--wrapper container">
+<div class="block two-col-feature container">
   <div class="row">
-    <div class="home-blog__posting home-blog__rule col-md-6">
-      <div class="home-blog__heading">
+    <div class="two-col-feature__col two-col-feature__rule col-md-6">
+      <div class="two-col-feature__heading">
         <h2>This is the Title of the Latest Blog Post</h2>
         <h5 class="date">12-10-15</h5>
       </div>
-      <div class="home-blog__content">
+      <div class="two-col-feature__content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       </div>
       <a class="link--read-more" href="#">read more</a>
     </div>
-    <div class="home-blog__posting col-md-6">
-      <div class="home-blog__heading">
+    <div class="two-col-feature__col col-md-6">
+      <div class="two-col-feature__heading">
         <h2>This is the Title of the Latest Blog Post</h2>
         <span class="date">12-10-15</span>
       </div>
-      <div class="home-blog__content">
+      <div class="two-col-feature__content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       </div>
       <a class="link--read-more" href="#">read more</a>

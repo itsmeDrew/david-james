@@ -329,6 +329,14 @@ p {
 *** HERO / JUMBOTRON
 **********************/
 
+.jumbotron[role="hero"] {
+  min-height: 600px;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  color: white;
+}
+
 .jumbotron__link {
   color: white;
 }
@@ -368,11 +376,7 @@ button {
 /*hero*/
 
 .page-template-home .jumbotron[role="hero"] {
-  background: url('img/home-bg.jpg');
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-  color: white;
+  background: url('img/hero-home.jpg');
 }
 
 .hero__logo {
@@ -390,10 +394,14 @@ button {
   font-size:36px;
 }
 
-/*new book*/
+/*about*/
 
 .about__stats--wrapper {
   margin-top: 2rem;
+}
+
+.about-content__paragraph {
+  margin-bottom: 3rem;
 }
 
 .about__stat-number {
@@ -443,19 +451,19 @@ button {
   border-bottom: 2px solid #c65f63;
 }
 
-/*blog*/
+/*two-col feature*/
 
-.home-blog__posting {
+.two-col-feature__col {
   text-align: center;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
-.home-blog__rule {
+.two-col-feature__rule {
   border-right: 2px solid #3d3d3d;
 }
 
-.home-blog__content {
+.two-col-feature__content {
   margin: 3rem 0;
 }
 
@@ -491,6 +499,15 @@ button {
   font-size: 100px;
   border: 5px solid white;
   text-transform: uppercase;
+}
+
+/**********************
+*** PAGE / ABOUT
+**********************/
+
+/*hero*/
+.page-template-about .jumbotron[role="hero"] {
+  background: url('img/hero-about.jpg');
 }
 
 /**********************
