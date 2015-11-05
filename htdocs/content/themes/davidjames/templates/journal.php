@@ -24,8 +24,8 @@ get_header();
     </div>
     <div class="blog-list__content col-md-8">
       <div class="blog-list__header">
-        <h4 class="about-heading--secondary">written by <?php the_author(); ?> | <?php the_date(); ?></h4>
-        <h2 class="about-heading--primary"><?php the_title(); ?></h2>
+        <h4 class="about-heading--secondary">written by <?php the_author(); ?> | <?php the_time('F j, Y'); ?></h4>
+        <h2 class="about-heading--primary"><a href="<?php echo the_permalink();?>"><?php the_title(); ?></a></h2>
       </div>
       <p class="blog-list__excerpt">
         <?php the_excerpt(); ?>
