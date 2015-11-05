@@ -515,7 +515,7 @@ button {
 **********************/
 
 .footer-main {
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -533,6 +533,22 @@ button {
 
 .footer-main__logo {
   margin: 5rem 0;
+}
+
+/**********************
+*** PAGE / JOURNAL
+**********************/
+
+.blog-list__listing {
+  margin-bottom: 4rem;
+}
+
+.blog-list__image {
+  width: 100%;
+}
+
+.blog-list__excerpt {
+  margin: 2rem 0;
 }
 
 /**********************

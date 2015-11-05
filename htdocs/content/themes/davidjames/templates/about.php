@@ -50,34 +50,21 @@ get_header();
   <div class="row">
     <div class="two-col-feature__col two-col-feature__rule col-md-6">
       <div class="two-col-feature__heading">
-        <h2>This is the Title of the Latest Blog Post</h2>
-        <h5 class="date">12-10-15</h5>
+        <h2>Press</h2>
       </div>
       <div class="two-col-feature__content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p>To arrange an interview or personal appearance with David James, please contact The David James Studio:</p>
       </div>
-      <a class="link--read-more" href="#">read more</a>
+      <a class="link--read-more" href="#">email</a>
     </div>
     <div class="two-col-feature__col col-md-6">
       <div class="two-col-feature__heading">
-        <h2>This is the Title of the Latest Blog Post</h2>
-        <span class="date">12-10-15</span>
+        <h2>Publishers</h2>
       </div>
       <div class="two-col-feature__content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p>Publishers, international or domestic,  interested in the rights to Steps, please contact management for review copies:</p>
       </div>
-      <a class="link--read-more" href="#">read more</a>
-    </div>
-  </div>
-</div>
-<div class="block cta--wrapper">
-  <div class="container">
-    <div class="cta__content col-md-8 col-md-offset-2">
-      <div class="cta__header">
-        <h2 class="cta__heading">The Debut Book from Author David James</h2>
-        <h1 class="cta__heading--large">steps</h1>
-      </div>
-      <a class="link--underline" href="#">purchase</a>
+      <a class="link--read-more" href="#">email</a>
     </div>
   </div>
 </div>
