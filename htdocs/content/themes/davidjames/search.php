@@ -1,53 +1,49 @@
 <?php
 /**
- * The template for displaying search results pages.
+ * The Template for displaying product archives, including the main shop page which is a post type archive.
+ *
+ * Override this template by copying it to yourtheme/woocommerce/archive-product.php
  *
  * @package David James
  * @subpackage david-james
  * @since David James 1.0.1
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+
 get_header(); ?>
+<?php include (TEMPLATEPATH . '/nav-main.php'); ?>
+<?php if ( have_posts() ) : ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="block product-listing--wrapper container-fluid woocommerce-page woocommerce">
+	<header class="product-listing__header">
+		<h2 class="product-listing__heading"><?php printf( __( 'Search Results for %s', 'twentyfifteen' ), get_search_query() ); ?></h2>
+	</header>
+	<div class="product-listing__facets row">
+		<?php do_action( 'woocommerce_before_shop_loop' ); ?>
+		<?php do_action( 'woocommerce_sidebar' ); ?>
+	</div>
+	<?php woocommerce_product_loop_start(); ?>
 
-		<?php if ( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+		<?php wc_get_template_part( 'content', 'product' ); ?>
+	<?php endwhile; // end of the loop. ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?></h1>
-			</header><!-- .page-header -->
+	<?php woocommerce_product_loop_end(); ?>
 
-			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post(); ?>
+	<?php do_action( 'woocommerce_after_shop_loop' ); ?>
 
-				<?php
-				/*
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'content', 'search' );
-
-			// End the loop.
-			endwhile;
-
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
-
-		// If no content, include the "No posts found" template.
+	<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
+	<?php wc_get_template( 'loop/no-products-found.php' ); ?>
+	<?php
 		else :
 			get_template_part( 'content', 'none' );
-
 		endif;
-		?>
+	?>
 
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+	<?php do_action( 'woocommerce_after_main_content' ); ?>
 
+</div>
 <?php get_footer(); ?>
