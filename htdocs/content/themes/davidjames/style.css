@@ -131,8 +131,6 @@ body {
 }
 
 a {
-  /*font-family: 'Open Sans', Arial, sans-serif;*/
-  /*font-size: 18px;*/
   color: #3d3d3d;
   text-decoration: none;
 }
@@ -157,9 +155,9 @@ a:hover {
 
 .link--read-more {
   font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #3d3d3d;
-  padding-bottom: .5rem;
+  padding-bottom: .2rem;
   border-bottom: 2px solid #1e1e1e;
   text-transform: uppercase;
   font-weight: bold;
@@ -292,7 +290,7 @@ p {
   left: 0;
   background: #333643;
   border-radius: 0;
-  z-index: 10;
+  z-index: 20;
 }
 
 .page-template-home .navbar-default.sticky {
@@ -333,12 +331,26 @@ p {
 *** HERO / JUMBOTRON
 **********************/
 
+.jumbotron[role="hero"],
+.jumbotron[role="hero"] h2,
+.jumbotron[role="hero"] h4,
+.jumbotron[role="hero"] a {
+  color: white;
+}
+
 .jumbotron[role="hero"] {
-  min-height: 600px;
   background-size: cover;
   position: relative;
   background-attachment: fixed;
-  color: white;
+}
+
+.jumbotron__overlay {
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
 }
 
 .jumbotron__link {
@@ -347,6 +359,13 @@ p {
 
 .jumbotron__link:hover {
   color: white;
+}
+
+.hero__content {
+  width: 60%;
+  padding: 7rem 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 .hero__content p {
@@ -381,6 +400,7 @@ button {
 
 .page-template-home .jumbotron[role="hero"] {
   background: url('img/hero-home.jpg');
+  min-height: 600px;
 }
 
 .hero__logo {
@@ -389,8 +409,7 @@ button {
   right: 2rem;
 }
 
-.hero__content {
-  width: 60%;
+.page-template-home .hero__content {
   padding: 10rem 2rem;
 }
 
@@ -562,7 +581,7 @@ button {
 }
 
 .blog-list__excerpt {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 /**********************
