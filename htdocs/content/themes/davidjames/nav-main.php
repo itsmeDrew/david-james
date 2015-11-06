@@ -21,7 +21,7 @@
         <?php
           $sitePages = array(
             'depth'        => 2,
-            'exclude'      => '5,6,7,8,10',
+            'exclude'      => '6,7,8,10',
             'post_status'  => 'publish',
             'sort_column'  => 'menu_order',
             'title_li'     => ''
