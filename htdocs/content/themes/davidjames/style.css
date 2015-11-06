@@ -585,6 +585,50 @@ button {
 }
 
 /**********************
+*** SHOP - WOOCOMMERCE
+**********************/
+
+/*facets*/
+
+.product-listing__facets {
+  margin: 3rem 0;
+}
+
+.woocommerce-page .woocommerce-ordering {
+  float: left;
+}
+
+.woocommerce-result-count {
+  display: none;
+}
+
+/* facets / search form */
+
+.product-listing__facets .search-form {
+  float: right;
+}
+
+.product-listing__facets input[type="search"],
+.product-listing__facets select {
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: black;
+  padding: .25rem 1rem;
+  font-weight: normal;
+  margin-right: 1rem;
+}
+
+/*product listing*/
+
+.woocommerce-page ul.products li.product {
+  text-align: center;
+}
+
+.product-listing__product--wrapper {
+  margin-bottom: 3rem;
+}
+
+/**********************
 *** MEDIA QUERIES
 **********************/
 
