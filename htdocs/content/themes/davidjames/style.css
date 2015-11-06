@@ -139,6 +139,10 @@ a:hover {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .link--underline {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 18px;
