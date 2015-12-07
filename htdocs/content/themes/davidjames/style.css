@@ -396,6 +396,14 @@ button {
   background: #ad5359;
 }
 
+.add_to_cart_button,
+.woocommerce a.button {
+  color: white;
+  font-weight: normal;
+  text-transform: capitalize;
+  background: #84577a;
+}
+
 /**********************
 *** PAGE / HOME
 **********************/
@@ -404,6 +412,8 @@ button {
 
 .page-template-home .jumbotron[role="hero"] {
   background: url('img/hero-home.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
   min-height: 600px;
 }
 
@@ -535,6 +545,9 @@ button {
 /*hero*/
 .page-template-about .jumbotron[role="hero"] {
   background: url('img/hero-about.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
 }
 
 /**********************
@@ -632,6 +645,45 @@ button {
   margin-bottom: 3rem;
 }
 
+.woocommerce ul.products li.product .price del {
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+/*single product*/
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #3d3d3d;
+  font-weight: 400;
+}
+
+.woocommerce div.product form.cart .button {
+  padding: .5rem 3rem;
+  border-radius: 99px;
+  -moz-border-radius: 99px;
+  -webkit-border-radius: 99px;
+  margin-top: 1rem;
+}
+
+/**********************
+*** CHECKOUT
+**********************/
+
+/*cart*/
+
+.cart-empty__content {
+  text-align: center;
+}
+
+.cart-subtotal .amount {
+  margin-left: 1rem;
+}
+
+input#coupon_code {
+  width: 35%;
+}
+
 /**********************
 *** MEDIA QUERIES
 **********************/
@@ -647,9 +699,29 @@ button {
 @media (max-width: 768px) {
   /*mobile nav*/
 
-  .navbar-collapse {
+  .navbar-default .navbar-collapse {
     background: rgba(0,0,0,0.8);
     padding: 1rem 2rem;
+    text-align: center;
+  }
+
+  .navbar-default .navbar-collapse .navbar__logo {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-default .navbar-collapse .navbar-nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .navbar-default .navbar-nav > li > .btn-pill {
+    display: none;
   }
 
   /*page home*/
@@ -660,5 +732,9 @@ button {
 }
 
 @media (max-width: 480px) {
+  /*product listing*/
+  .product-listing__facets .search-form {
+    float: left;
+  }
 
 }
