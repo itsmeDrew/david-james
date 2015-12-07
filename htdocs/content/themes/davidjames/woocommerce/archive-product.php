@@ -2,8 +2,6 @@
 /**
  * The Template for displaying product archives, including the main shop page which is a post type archive.
  *
- * Override this template by copying it to yourtheme/woocommerce/archive-product.php
- *
  * @package David James
  * @subpackage david-james
  * @since David James 1.0.1
@@ -40,6 +38,6 @@ get_header(); ?>
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_after_main_content' ); ?>
-	
+
 </div>
 <?php get_footer(); ?>
