@@ -341,7 +341,7 @@ function remove_admin_login_header() {
 //the excerpt revised
 
 function custom_excerpt_length( $length ) {
-	return 20;
+	return 30;
 }
 
 function new_excerpt_more($more) {
