@@ -157,6 +157,7 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #3d3d3d;
+  letter-spacing: 2px;
 }
 
 .link--underline:hover {
@@ -257,6 +258,12 @@ p {
   box-shadow: none;
 }
 
+.navbar-default .fa {
+  float: left;
+  color: white;
+  line-height: 1.75;
+}
+
 .navbar-default a {
   font-family: "Times New Roman", Times, serif;
 }
@@ -272,6 +279,7 @@ p {
   color: white;
   text-shadow: none;
   padding: 5px 15px;
+  display: inline-block;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -379,8 +387,9 @@ p {
   z-index: 10;
 }
 
-.hero__content p {
+.hero__quote {
   color: white;
+  line-height: 1.5;
 }
 
 /**********************
@@ -401,6 +410,7 @@ button {
 
 .btn-pill:hover {
   background: #ad5359;
+  color: white;
 }
 
 .add_to_cart_button,
@@ -463,6 +473,11 @@ button {
   letter-spacing: 1px;
   color: #c65f63;
   text-transform: uppercase;
+}
+
+.page-template-about .two-col-feature {
+  margin-top: 4em;
+  margin-bottom: 6em;
 }
 
 /*art display*/
@@ -611,6 +626,19 @@ button {
   margin: 3rem 0;
 }
 
+.two-col-feature__excerpt p {
+  position: relative;
+  padding-bottom: 6rem;
+}
+.two-col-feature__excerpt .link--read-more {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
 /*cta*/
 
 .cta--wrapper {
@@ -643,6 +671,7 @@ button {
   font-size: 100px;
   border: 5px solid white;
   text-transform: uppercase;
+  letter-spacing: 10px;
 }
 
 /**********************
@@ -662,7 +691,7 @@ button {
 **********************/
 
 .blog-list__listing {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .blog-list__image {
@@ -860,14 +889,33 @@ input#coupon_code {
 }
 
 @media (max-width: 991px) {
+  /*nav*/
+
+  .navbar-default .fa {
+    display: none;
+  }
+
+  .navbar-default .navbar-nav__cart {
+    display: none;
+  }
+
   /*home*/
 
  .home-art__artwork-row {
    max-height: 330px;
+   overflow: hidden;
  }
 
  .hero__content {
    width: 80%;
+ }
+
+ .two-col-feature__rule {
+   border: none;
+ }
+
+ .two-col-feature__col {
+   margin-bottom: 3rem;
  }
 }
 
@@ -875,7 +923,7 @@ input#coupon_code {
   /*mobile nav*/
 
   .navbar-default .navbar-collapse {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.9);
     padding: 1rem 2rem;
     text-align: center;
   }
@@ -897,6 +945,10 @@ input#coupon_code {
 
   .navbar-default .navbar-nav > li > .btn-pill {
     display: none;
+  }
+
+  .navbar-nav__link--product {
+    margin: 1rem 0;
   }
 
   /*page home*/

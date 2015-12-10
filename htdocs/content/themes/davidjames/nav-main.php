@@ -35,10 +35,26 @@
           );
         ?>
         <?php wp_list_pages($sitePages); ?>
-        <li><button class="btn-pill" href="#">Purchase Steps | $15</button></li>
+
+        <?php
+        $productOptions = array(
+    			'post_type' => 'product',
+          'id' => '43',
+    			'posts_per_page' => 1
+    			);
+        $queryProduct = new WP_Query($productOptions); ?>
+        <?php if ($queryProduct->have_posts()) : while ($queryProduct->have_posts()) : $queryProduct->the_post(); ?>
+        <li class="navbar-nav__link--product"><div><a class="btn-pill" href="<?php echo the_permalink(); ?>">Purchase Steps | $15</a></div></li>
+        <?php endwhile; endif; wp_reset_postdata(); ?>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <?php wp_list_pages($cartPages); ?>
+        <li class="page_item navbar-nav__cart">
+          <i class="fa fa-shopping-cart"></i>
+          <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+            <?php echo WC()->cart->get_cart_total(); ?>
+            <?php echo sprintf (_n( '%d Item', '%d Items', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?>
+          </a>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

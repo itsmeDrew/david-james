@@ -16,7 +16,7 @@ get_header();
       <img src="<?php bloginfo(template_url);?>/img/david-james-signature-light.png" alt="David James Logo" />
     </div>
     <div class="hero__content">
-      <p>“I think this, these diaries of sorts, a memoir of the steps you have taken, is the healthiest approach to deal with these difficult problems.”</p>
+      <p class="hero__quote">“I think this, these diaries of sorts, a memoir of the steps you have taken, is the healthiest approach to deal with these difficult problems.”</p>
       <a class="jumbotron__link link--underline" href="#" role="cta">Watch Trailer</a>
     </div>
   </div>
@@ -93,7 +93,9 @@ get_header();
           <h5 class="date"><?php the_time('F j, Y'); ?></h5>
         </div>
         <div class="two-col-feature__content">
-          <?php the_excerpt(); ?>
+          <div class="two-col-feature__excerpt">
+            <?php the_excerpt(); ?>
+          </div>
         </div>
       </li>
       <?php endwhile; endif; wp_reset_postdata(); ?>
@@ -108,7 +110,16 @@ get_header();
         <h2 class="cta__heading">The Debut Book from Author David James</h2>
         <h1 class="cta__heading--large">steps</h1>
       </div>
-      <a class="link--underline" href="#">purchase</a>
+      <?php
+        $productOptions = array(
+          'post_type' => 'product',
+          'id' => '43',
+          'posts_per_page' => 1
+          );
+      $queryProduct = new WP_Query($productOptions); ?>
+      <?php if ($queryProduct->have_posts()) : while ($queryProduct->have_posts()) : $queryProduct->the_post(); ?>
+      <a class="link--underline" href="<?php echo the_permalink(); ?>">purchase</a>
+      <?php endwhile; endif; wp_reset_postdata(); ?>
     </div>
   </div>
 </div>
