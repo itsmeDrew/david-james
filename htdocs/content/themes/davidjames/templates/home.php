@@ -55,17 +55,27 @@ get_header();
   <div class="row">
     <div class="home-art__artwork--wrapper col-md-6 col--full-width">
       <div class="home-art__artwork-row">
-        <div class="home-art__artwork-content">
-          <a class="home-art__link" href="<?php echo get_permalink(5); ?>">view the david james art gallery</a>
+        <div class="home-art__artwork-content--wrapper">
+          <div class="home-art__artwork-content">
+            <a class="home-art__link home-art__heading" href="<?php echo get_permalink(5); ?>">view the david james art gallery</a>
+          </div>
         </div>
         <img class="home-art__artwork-image" src="<?php bloginfo('template_url'); ?>/img/art-01.jpg" alt="artwork 01" />
       </div>
     </div>
     <div class="home-art__artwork--wrapper col-md-6 col--full-width">
-      <div class="home-art__artwork--row">
+      <div class="home-art__artwork-row">
+        <div class="home-art__artwork-content--wrapper home-art__artwork-content--form">
+          <div class="home-art__artwork-content">
+            <h2 class="home-art__heading">Download a free excerpt from <i>Steps:</i></h2>
+            <div class="home-art__form">
+              <?php echo do_shortcode( '[contact-form-7 id="42" title="Home Download Form"]' ); ?>
+            </div>
+          </div>
+        </div>
         <img class="home-art__artwork-image" src="<?php bloginfo('template_url'); ?>/img/art-02.jpg" alt="artwork 02" />
       </div>
-      <div class="home-art__artwork--row">
+      <div class="home-art__artwork-row">
         <img class="home-art__artwork-image" src="<?php bloginfo('template_url'); ?>/img/art-03.jpg" alt="artwork 03" />
       </div>
     </div>
@@ -74,19 +84,21 @@ get_header();
 <div class="block two-col-feature container">
   <div class="row">
     <?php $queryBlog = new WP_Query(array( 'posts_per_page' => 2)); ?>
-    <?php if ($queryBlog->have_posts()) : while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
 
-    <div class="two-col-feature__col two-col-feature__rule col-md-6">
-      <div class="two-col-feature__heading">
-        <h2><?php the_title(); ?></h2>
-        <h5 class="date"><?php the_time('F j, Y'); ?></h5>
-      </div>
-      <div class="two-col-feature__content">
-        <?php the_excerpt(); ?>
-      </div>
-    </div>
+    <ul>
+      <?php if ($queryBlog->have_posts()) : while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
+      <li class="two-col-feature__col two-col-feature__rule col-md-6">
+        <div class="two-col-feature__heading">
+          <h2><?php the_title(); ?></h2>
+          <h5 class="date"><?php the_time('F j, Y'); ?></h5>
+        </div>
+        <div class="two-col-feature__content">
+          <?php the_excerpt(); ?>
+        </div>
+      </li>
+      <?php endwhile; endif; wp_reset_postdata(); ?>
+    </ul>
 
-    <?php endwhile; endif; wp_reset_postdata(); ?>
   </div>
 </div>
 <div class="block cta--wrapper">
