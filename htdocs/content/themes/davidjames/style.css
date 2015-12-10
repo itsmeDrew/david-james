@@ -478,6 +478,7 @@ button {
   bottom: 0;
   left: 0;
   padding: 3rem;
+  z-index: 10;
 }
 
 .home-art__artwork-content--wrapper::before {
@@ -505,7 +506,7 @@ button {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  z-index: 10;
+  z-index: -1;
 }
 
 .home-art__artwork-content--wrapper:hover::before,
@@ -513,7 +514,6 @@ button {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
-  z-index: -1;
 }
 
 .home-art__artwork-content--form {
