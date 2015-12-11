@@ -357,10 +357,10 @@ p {
 .jumbotron[role="hero"] h4,
 .jumbotron[role="hero"] a {
   color: white;
-  background-color: transparent;
 }
 
 .jumbotron-video--wrapper {
+  background-color: transparent;
   overflow: hidden;
 }
 
