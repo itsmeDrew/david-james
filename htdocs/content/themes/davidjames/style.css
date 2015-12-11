@@ -925,11 +925,44 @@ input#coupon_code {
   .navbar-nav__cart a {
     font-size: 12px;
   }
+
   /*home*/
+
+  .jumbotron-video {
+    display: none;
+  }
+
+  .jumbotron__overlay {
+    background: rgba(0,0,0,0.5);
+  }
+
+  .page-template-home .jumbotron[role="hero"] {
+    background: url('img/hero-home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+  }
 
  .home-art__artwork-row {
    max-height: 330px;
    overflow: hidden;
+ }
+
+ .home-art__artwork-content {
+   opacity: 1;
+ }
+
+ .home-art__artwork-content--wrapper::before,
+ .home-art__artwork-content--wrapper::after {
+   opacity: 1;
+   -webkit-transform: scale(1);
+   transform: scale(1);
+ }
+
+ .home-art__artwork-content--wrapper .home-art__artwork-content {
+   opacity: 1;
+   -webkit-transform: translate3d(0,0,0) translateY(-50%);
+   transform: translate3d(0,0,0) translateY(-50%);
  }
 
  .hero__content {
@@ -994,6 +1027,30 @@ input#coupon_code {
 }
 
 @media (max-width: 480px) {
+  /*home*/
+
+  .hero__content .hero__quote {
+    font-size: 26px;
+  }
+
+  .hero__content .jumbotron__link {
+    font-size: 16px;
+  }
+
+  .home-art__heading {
+    font-size: 14px;
+  }
+
+  .home-art__form input[type="email"] {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .home-art__form input[type="email"],
+  .home-art__form .wpcf7 input[type="submit"] {
+    font-size: 14px;
+  }
+
   /*product listing*/
   .product-listing__facets .search-form {
     float: left;
