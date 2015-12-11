@@ -357,6 +357,11 @@ p {
 .jumbotron[role="hero"] h4,
 .jumbotron[role="hero"] a {
   color: white;
+  background-color: transparent;
+}
+
+.jumbotron-video--wrapper {
+  overflow: hidden;
 }
 
 .jumbotron[role="hero"] {
@@ -367,7 +372,7 @@ p {
 
 .jumbotron__overlay {
   position: absolute;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -392,6 +397,21 @@ p {
 .hero__quote {
   color: white;
   line-height: 1.5;
+}
+
+video.jumbotron-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
 }
 
 /**********************
@@ -429,17 +449,18 @@ button {
 
 /*hero*/
 
-.page-template-home .jumbotron[role="hero"] {
+/*.page-template-home .jumbotron[role="hero"] {
   background: url('img/hero-home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 600px;
-}
+}*/
 
 .hero__logo {
   position: absolute;
   top: 2rem;
   right: 2rem;
+  z-index: 10;
 }
 
 .page-template-home .hero__content {
@@ -457,7 +478,7 @@ button {
 }
 
 .about-content__paragraph {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .about__stat-number {
@@ -897,10 +918,13 @@ input#coupon_code {
     display: none;
   }
 
-  .navbar-default .navbar-nav__cart {
-    display: none;
+  .navbar-nav__link--product .btn-pill {
+    font-size: 12px !important;
   }
 
+  .navbar-nav__cart a {
+    font-size: 12px;
+  }
   /*home*/
 
  .home-art__artwork-row {
@@ -951,6 +975,11 @@ input#coupon_code {
 
   .navbar-nav__link--product {
     margin: 1rem 0;
+  }
+
+  .navbar-default .navbar-nav__cart {
+    border-top: 2px solid #222222;
+    padding-top: .5rem;
   }
 
   /*page home*/

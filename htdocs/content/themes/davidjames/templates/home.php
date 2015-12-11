@@ -10,7 +10,7 @@
 
 get_header();
 ?>
-<div class="jumbotron js-sticky-scroll" role="hero">
+<div class="jumbotron jumbotron-video--wrapper js-sticky-scroll" role="hero">
   <div class="container">
     <div class="hero__logo">
       <img src="<?php bloginfo(template_url);?>/img/david-james-signature-light.png" alt="David James Logo" />
@@ -21,6 +21,10 @@ get_header();
     </div>
   </div>
   <?php include (TEMPLATEPATH . '/nav-main.php'); ?>
+  <div class="jumbotron__overlay"></div>
+  <video autoplay loop poster="polina.jpg" class="jumbotron-video">
+    <source src="http://ak.picdn.net/footage/assets/montage/HomepageReel_062515.orig.mp4" type="video/mp4">
+  </video>
 </div>
 <div class="block new-book--wrapper container">
   <div class="row">
